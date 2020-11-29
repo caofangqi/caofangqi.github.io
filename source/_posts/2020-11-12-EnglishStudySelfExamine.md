@@ -41,7 +41,7 @@ layout: true
 
 todo 
 
-翻译技术文档部署到静态页面，接受大佬们的检阅。
+翻译技术文档部署到gitpages
 
 
 
