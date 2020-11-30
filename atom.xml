@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>曹方祺 Blog</title>
+  <title>星火燎原</title>
   <icon>http://caofangqi.github.io/icon.png</icon>
-  <subtitle>曹方祺 Blog</subtitle>
+  <subtitle>星星之火可以燎原</subtitle>
   <link href="http://caofangqi.github.io/atom.xml" rel="self"/>
   
   <link href="http://caofangqi.github.io/"/>
