@@ -100,9 +100,9 @@ creative_commons:
 
 # Schemes
 #scheme: Muse
-scheme: Mist
+#scheme: Mist
 #scheme: Pisces
-#scheme: Gemini
+scheme: Gemini
 
 # Dark Mode
 darkmode: false
@@ -635,12 +635,12 @@ livere_uid: # <your_uid>
 # Gitalk
 # For more information: https://gitalk.github.io, https://github.com/gitalk/gitalk
 gitalk:
-  enable: true
+  enable: false
   github_id: caofangqi # GitHub repo owner
-  repo: caofangqi.github.io # Repository name to store issues
-  client_id: 54492bb323d5f2f7bff9 # GitHub Application Client ID
-  client_secret: 2094752ee6f86a7f67844e19c91dc62525f2de29 # GitHub Application Client Secret
-  admin_user: caofangqi # GitHub repo owner and collaborators, only these guys can initialize gitHub issues
+  repo:  # Repository name to store issues
+  client_id: # GitHub Application Client ID
+  client_secret: # GitHub Application Client Secret
+  admin_user:  # GitHub repo owner and collaborators, only these guys can initialize gitHub issues
   distraction_free_mode: true # Facebook-like distraction free mode
   # Gitalk's display language depends on user's browser or system environment
   # If you want everyone visiting your site to see a uniform language, you can set a force language value
@@ -1002,3 +1002,12 @@ wechat_subscriber:
   enabled: true
   qcode: /images/wechat-qcode.jpg
   description: 关注公众号，永不迷路
+
+# 评论系统
+utteranc:
+  enable: true
+  repo: monkeyWie/monkeywie.github.io
+  pathname: pathname
+  # theme: github-light,github-dark,github-dark-orange
+  theme: github-light
+  cdn: https://utteranc.es/client.js
