@@ -6,7 +6,7 @@
   <link href="http://caofangqi.github.io/atom.xml" rel="self"/>
   
   <link href="http://caofangqi.github.io/"/>
-  <updated>2020-11-29T13:05:52.287Z</updated>
+  <updated>2020-12-18T07:50:29.829Z</updated>
   <id>http://caofangqi.github.io/</id>
   
   <author>
@@ -15,6 +15,39 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Spring 中的事件以及观察者模式 的使用场景</title>
+    <link href="http://caofangqi.github.io/2020/12/18/spring/2020-12-18-spring-event-one/"/>
+    <id>http://caofangqi.github.io/2020/12/18/spring/2020-12-18-spring-event-one/</id>
+    <published>2020-12-18T11:41:00.000Z</published>
+    <updated>2020-12-18T07:50:29.829Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Spring-中的事件以及观察者模式-的使用场景&quot;&gt;&lt;a href=&quot;#Spring-中的事件以及观察者模式-的使用场景&quot; class=&quot;headerlink&quot; title=&quot;Spring 中的事件以及观察者模式 的使用场景&quot;&gt;&lt;/a&gt;Spring</summary>
+        
+      
+    
+    
+    
+    <category term="spring" scheme="http://caofangqi.github.io/categories/spring/"/>
+    
+    <category term="设计模式" scheme="http://caofangqi.github.io/categories/spring/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    
+    
+    <category term="观察者模式" scheme="http://caofangqi.github.io/tags/%E8%A7%82%E5%AF%9F%E8%80%85%E6%A8%A1%E5%BC%8F/"/>
+    
+    <category term="设计模式" scheme="http://caofangqi.github.io/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    
+    <category term="spring" scheme="http://caofangqi.github.io/tags/spring/"/>
+    
+    <category term="spring 事件机制" scheme="http://caofangqi.github.io/tags/spring-%E4%BA%8B%E4%BB%B6%E6%9C%BA%E5%88%B6/"/>
+    
+  </entry>
   
   <entry>
     <title>英语学习反省</title>

@@ -1,23 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>韭菜本菜</title>
-    <url>/2020/09/10/2020-09-09-%E9%9F%AD%E8%8F%9C%E6%9C%AC%E8%8F%9C/</url>
-    <content><![CDATA[<p>股市有风险，投资需谨慎。</p>
-<p>自从19年开始玩A股以来，历经风雨。</p>
-<p>疫情，美股多次熔断，中印冲突，中美贸易战。全在这段时间发生了。</p>
-<p>嗯，也是这一年，买入中兴通讯，死不悔改，从 55 陪它到今天的32.</p>
-<p>韭菜本菜无疑了，感慨万千。</p>
-]]></content>
-      <categories>
-        <category>投资</category>
-      </categories>
-      <tags>
-        <tag>投资</tag>
-        <tag>韭菜日记</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>英语学习反省</title>
     <url>/2020/11/29/2020-11-12-EnglishStudySelfExamine/</url>
     <content><![CDATA[<p>大学毕业已经三年多了，从初中开始学英语，到如今还是菜的抠脚，看个技术文档基本靠有道。</p>
@@ -47,6 +30,38 @@
         <tag>英语</tag>
         <tag>反思</tag>
         <tag>成长</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>韭菜本菜</title>
+    <url>/2020/09/10/2020-09-09-%E9%9F%AD%E8%8F%9C%E6%9C%AC%E8%8F%9C/</url>
+    <content><![CDATA[<p>股市有风险，投资需谨慎。</p>
+<p>自从19年开始玩A股以来，历经风雨。</p>
+<p>疫情，美股多次熔断，中印冲突，中美贸易战。全在这段时间发生了。</p>
+<p>嗯，也是这一年，买入中兴通讯，死不悔改，从 55 陪它到今天的32.</p>
+<p>韭菜本菜无疑了，感慨万千。</p>
+]]></content>
+      <categories>
+        <category>投资</category>
+      </categories>
+      <tags>
+        <tag>投资</tag>
+        <tag>韭菜日记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Spring 中的事件以及观察者模式 的使用场景</title>
+    <url>/2020/12/18/spring/2020-12-18-spring-event-one/</url>
+    <content><![CDATA[<h1 id="Spring-中的事件以及观察者模式-的使用场景"><a href="#Spring-中的事件以及观察者模式-的使用场景" class="headerlink" title="Spring 中的事件以及观察者模式 的使用场景"></a>Spring 中的事件以及观察者模式 的使用场景</h1>]]></content>
+      <categories>
+        <category>spring</category>
+        <category>设计模式</category>
+      </categories>
+      <tags>
+        <tag>观察者模式</tag>
+        <tag>设计模式</tag>
+        <tag>spring</tag>
+        <tag>spring 事件机制</tag>
       </tags>
   </entry>
   <entry>
