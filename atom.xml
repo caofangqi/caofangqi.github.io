@@ -6,7 +6,7 @@
   <link href="http://caofangqi.github.io/atom.xml" rel="self"/>
   
   <link href="http://caofangqi.github.io/"/>
-  <updated>2020-12-18T07:50:29.829Z</updated>
+  <updated>2021-01-11T14:25:16.807Z</updated>
   <id>http://caofangqi.github.io/</id>
   
   <author>
@@ -17,18 +17,18 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Spring 中的事件以及观察者模式 的使用场景</title>
-    <link href="http://caofangqi.github.io/2020/12/18/spring/2020-12-18-spring-event-one/"/>
-    <id>http://caofangqi.github.io/2020/12/18/spring/2020-12-18-spring-event-one/</id>
+    <title>Spring 中的事件机制</title>
+    <link href="http://caofangqi.github.io/2020/12/18/spring/2020-12-18-spring-event/"/>
+    <id>http://caofangqi.github.io/2020/12/18/spring/2020-12-18-spring-event/</id>
     <published>2020-12-18T11:41:00.000Z</published>
-    <updated>2020-12-18T07:50:29.829Z</updated>
+    <updated>2021-01-11T14:25:16.807Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1 id=&quot;Spring-中的事件以及观察者模式-的使用场景&quot;&gt;&lt;a href=&quot;#Spring-中的事件以及观察者模式-的使用场景&quot; class=&quot;headerlink&quot; title=&quot;Spring 中的事件以及观察者模式 的使用场景&quot;&gt;&lt;/a&gt;Spring</summary>
+    <summary type="html">&lt;h1 id=&quot;Spring-中的事件机制&quot;&gt;&lt;a href=&quot;#Spring-中的事件机制&quot; class=&quot;headerlink&quot; title=&quot;Spring 中的事件机制&quot;&gt;&lt;/a&gt;Spring</summary>
         
       
     
@@ -50,27 +50,29 @@
   </entry>
   
   <entry>
-    <title>英语学习反省</title>
-    <link href="http://caofangqi.github.io/2020/11/29/2020-11-12-EnglishStudySelfExamine/"/>
-    <id>http://caofangqi.github.io/2020/11/29/2020-11-12-EnglishStudySelfExamine/</id>
-    <published>2020-11-29T03:41:00.000Z</published>
-    <updated>2020-11-29T13:05:52.287Z</updated>
+    <title>设计模式之观察者模式</title>
+    <link href="http://caofangqi.github.io/2020/12/18/design-pattern/2020-12-28-observer-pattern/"/>
+    <id>http://caofangqi.github.io/2020/12/18/design-pattern/2020-12-28-observer-pattern/</id>
+    <published>2020-12-18T11:41:00.000Z</published>
+    <updated>2021-01-12T15:01:06.229Z</updated>
     
     
-    <summary type="html">大学毕业已经三年多了，从初中开始学英语，到如今还是菜的抠脚，看个技术文档基本靠有道。</summary>
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;设计模式之观察者模式&quot;&gt;&lt;a href=&quot;#设计模式之观察者模式&quot; class=&quot;headerlink&quot; title=&quot;设计模式之观察者模式&quot;&gt;&lt;/a&gt;设计模式之观察者模式&lt;/h1&gt;&lt;p&gt;todo</summary>
+        
+      
     
     
     
-    <category term="英语学习" scheme="http://caofangqi.github.io/categories/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0/"/>
-    
-    <category term="反思" scheme="http://caofangqi.github.io/categories/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0/%E5%8F%8D%E6%80%9D/"/>
+    <category term="设计模式" scheme="http://caofangqi.github.io/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
     
     
-    <category term="英语" scheme="http://caofangqi.github.io/tags/%E8%8B%B1%E8%AF%AD/"/>
+    <category term="观察者模式" scheme="http://caofangqi.github.io/tags/%E8%A7%82%E5%AF%9F%E8%80%85%E6%A8%A1%E5%BC%8F/"/>
     
-    <category term="反思" scheme="http://caofangqi.github.io/tags/%E5%8F%8D%E6%80%9D/"/>
-    
-    <category term="成长" scheme="http://caofangqi.github.io/tags/%E6%88%90%E9%95%BF/"/>
+    <category term="设计模式" scheme="http://caofangqi.github.io/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
     
   </entry>
   
@@ -79,7 +81,7 @@
     <link href="http://caofangqi.github.io/2020/09/19/2020-09-19-jmm/"/>
     <id>http://caofangqi.github.io/2020/09/19/2020-09-19-jmm/</id>
     <published>2020-09-19T04:44:00.000Z</published>
-    <updated>2020-09-18T16:46:30.023Z</updated>
+    <updated>2021-01-12T15:01:18.768Z</updated>
     
     
     <summary type="html">Java 内存模型</summary>
@@ -98,36 +100,6 @@
     <category term="JMM" scheme="http://caofangqi.github.io/tags/JMM/"/>
     
     <category term="多线程" scheme="http://caofangqi.github.io/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>韭菜本菜</title>
-    <link href="http://caofangqi.github.io/2020/09/10/2020-09-09-%E9%9F%AD%E8%8F%9C%E6%9C%AC%E8%8F%9C/"/>
-    <id>http://caofangqi.github.io/2020/09/10/2020-09-09-%E9%9F%AD%E8%8F%9C%E6%9C%AC%E8%8F%9C/</id>
-    <published>2020-09-10T02:00:00.000Z</published>
-    <updated>2020-09-10T09:02:35.597Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;股市有风险，投资需谨慎。&lt;/p&gt;
-&lt;p&gt;自从19年开始玩A股以来，历经风雨。&lt;/p&gt;
-&lt;p&gt;疫情，美股多次熔断，中印冲突，中美贸易战。全在这段时间发生了。&lt;/p&gt;
-&lt;p&gt;嗯，也是这一年，买入中兴通讯，死不悔改，从 55</summary>
-        
-      
-    
-    
-    
-    <category term="投资" scheme="http://caofangqi.github.io/categories/%E6%8A%95%E8%B5%84/"/>
-    
-    
-    <category term="投资" scheme="http://caofangqi.github.io/tags/%E6%8A%95%E8%B5%84/"/>
-    
-    <category term="韭菜日记" scheme="http://caofangqi.github.io/tags/%E9%9F%AD%E8%8F%9C%E6%97%A5%E8%AE%B0/"/>
     
   </entry>
   

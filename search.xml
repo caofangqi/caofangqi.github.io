@@ -1,58 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>英语学习反省</title>
-    <url>/2020/11/29/2020-11-12-EnglishStudySelfExamine/</url>
-    <content><![CDATA[<p>大学毕业已经三年多了，从初中开始学英语，到如今还是菜的抠脚，看个技术文档基本靠有道。</p>
-<p>中学开始，学英语，对英语不是很感兴趣，不会去背单词，上课也不听，考试全靠三长一短选最短。最佳战绩考了个8分(ps:满分150)。</p>
-<p>到大学，开始有意识的学英语了，因为听说毕业会要求英语等级。于是开始背单词，四背单词，前面背后面忘。。再到后面完成形成了一个打卡习惯。只是背单词软件上每日打卡，心里安慰自己 学过了。(如果不是毕业要求 没有要求英语，我多半是会拿个结业证)</p>
-<p>毕业之后的这三年多，中间几度尝试，从扇贝背单词，到英语流利说买课程，到后来，终究是学着学着就放弃了。(屡败屡战)</p>
-<p>反思一下，为什么学不好？</p>
-<p>我觉得有几点原因</p>
-<ul>
-<li>记不住单词，完全死记硬背。</li>
-<li>记住了用不到，没有场景，然后就忘了。</li>
-<li>没有成就感。</li>
-</ul>
-<p>针对以上几点问题，我又想出了一个办法，并决定坚持下去,立帖为证。</p>
-<p>翻译技术文档，一次翻译一点，翻译中遇上的单词短词记下来，这样等我翻译完了应该就很厉害了，看技术文档多半可以摆脱有道了，或者降低使用有道的频率。</p>
-<p>这里使用到了 anki 这个软件，挺好用的。</p>
-<p>todo </p>
-<p>翻译技术文档部署到gitpages</p>
-<p>未待完续。。。</p>
-<p>持续更新</p>
+    <title>Spring 中的事件机制</title>
+    <url>/2020/12/18/spring/2020-12-18-spring-event/</url>
+    <content><![CDATA[<h1 id="Spring-中的事件机制"><a href="#Spring-中的事件机制" class="headerlink" title="Spring 中的事件机制"></a>Spring 中的事件机制</h1><p>Todo</p>
 ]]></content>
-      <categories>
-        <category>英语学习</category>
-        <category>反思</category>
-      </categories>
-      <tags>
-        <tag>英语</tag>
-        <tag>反思</tag>
-        <tag>成长</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>韭菜本菜</title>
-    <url>/2020/09/10/2020-09-09-%E9%9F%AD%E8%8F%9C%E6%9C%AC%E8%8F%9C/</url>
-    <content><![CDATA[<p>股市有风险，投资需谨慎。</p>
-<p>自从19年开始玩A股以来，历经风雨。</p>
-<p>疫情，美股多次熔断，中印冲突，中美贸易战。全在这段时间发生了。</p>
-<p>嗯，也是这一年，买入中兴通讯，死不悔改，从 55 陪它到今天的32.</p>
-<p>韭菜本菜无疑了，感慨万千。</p>
-]]></content>
-      <categories>
-        <category>投资</category>
-      </categories>
-      <tags>
-        <tag>投资</tag>
-        <tag>韭菜日记</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Spring 中的事件以及观察者模式 的使用场景</title>
-    <url>/2020/12/18/spring/2020-12-18-spring-event-one/</url>
-    <content><![CDATA[<h1 id="Spring-中的事件以及观察者模式-的使用场景"><a href="#Spring-中的事件以及观察者模式-的使用场景" class="headerlink" title="Spring 中的事件以及观察者模式 的使用场景"></a>Spring 中的事件以及观察者模式 的使用场景</h1>]]></content>
       <categories>
         <category>spring</category>
         <category>设计模式</category>
@@ -62,6 +14,19 @@
         <tag>设计模式</tag>
         <tag>spring</tag>
         <tag>spring 事件机制</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>设计模式之观察者模式</title>
+    <url>/2020/12/18/design-pattern/2020-12-28-observer-pattern/</url>
+    <content><![CDATA[<h1 id="设计模式之观察者模式"><a href="#设计模式之观察者模式" class="headerlink" title="设计模式之观察者模式"></a>设计模式之观察者模式</h1><p>todo </p>
+]]></content>
+      <categories>
+        <category>设计模式</category>
+      </categories>
+      <tags>
+        <tag>观察者模式</tag>
+        <tag>设计模式</tag>
       </tags>
   </entry>
   <entry>
