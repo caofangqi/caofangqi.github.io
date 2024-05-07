@@ -2,47 +2,17 @@
 home: true
 layout: BlogHome
 icon: home
-title: 博客主页
+title: 老叶札记-主页
 heroImage: https://theme-hope-assets.vuejs.press/logo.svg
-heroText: 你博客的名称
+heroText: 老叶札记
 heroFullScreen: true
-tagline: 你可以在这里放置你的口号与标语
+tagline: 无善无恶是心之体，有善有恶是意之动，知善知恶是良知，为善去恶是格物
 projects:
-  - icon: project
-    name: 项目名称
-    desc: 项目详细描述
-    link: https://你的项目链接
-
-  - icon: link
-    name: 链接名称
-    desc: 链接详细描述
-    link: https://链接地址
-
-  - icon: book
-    name: 书籍名称
-    desc: 书籍详细描述
-    link: https://你的书籍链接
-
-  - icon: article
-    name: 文章名称
-    desc: 文章详细描述
-    link: https://你的文章链接
-
-  - icon: friend
-    name: 伙伴名称
-    desc: 伙伴详细介绍
-    link: https://你的伙伴链接
-
   - icon: https://theme-hope-assets.vuejs.press/logo.svg
-    name: 自定义项目
-    desc: 自定义详细介绍
-    link: https://你的自定义链接
-
-footer: 自定义你的页脚文字
+    name: 阳明心学
+    desc: 圣人之道，吾性自足
+    link: https://baike.baidu.com/item/%E5%BF%83%E5%AD%A6/1136154
+footer: 心即理、知行合一、致良知
 ---
 
-这是一个博客主页的案例。
-
-要使用此布局，你应该在页面前端设置 `layout: BlogHome` 和 `home: true`。
-
-相关配置文档请见 [博客主页](https://theme-hope.vuejs.press/zh/guide/blog/home.html)。
+这里是老叶的博客

@@ -4,18 +4,18 @@ import sidebar from "./sidebar.js";
 import { MR_HOPE_AVATAR } from "./logo.js";
 
 export default hopeTheme({
-  hostname: "https://mister-hope.github.io",
+  hostname: "https://caofangqi.github.io",
 
   author: {
-    name: "Mr.Hope",
-    url: "https://mister-hope.com",
+    name: "行知",
+    url: "https://caofangqi.github.io",
   },
 
   iconAssets: "fontawesome-with-brands",
 
   logo: "https://theme-hope-assets.vuejs.press/logo.svg",
-
-  repo: "vuepress-theme-hope/vuepress-theme-hope",
+  //仓库配置
+  repo: "caofangqi/caofangqi.github.io",
 
   docsDir: "src",
 
@@ -31,7 +31,7 @@ export default hopeTheme({
 
   // 博客相关
   blog: {
-    description: "良知告诉我，要在这个世界留下点什么，证明我来过",
+    description: "要在这个世界留下点什么，证明我来过",
     intro: "/intro.html",
     medias: {
       // Baidu: "https://example.com",
@@ -87,16 +87,20 @@ export default hopeTheme({
   // 在这里配置主题提供的插件
   plugins: {
     blog: true,
+    search: true,
 
     // 启用之前需安装 @waline/client
     // 警告: 这是一个仅供演示的测试服务，在生产环境中请自行部署并使用自己的服务！
-    // comment: {
-    //   provider: "Waline",
-    //   serverURL: "https://waline-comment.vuejs.press",
-    // },
-
+    comment: {
+      provider: "Giscus",
+      repo: "caofangqi/caofangqi.github.io",
+      repoId:"R_kgDOL4I80Q",
+      category:"Announcements",
+      categoryId:"DIC_kwDOL4I80c4CfMN4",
+    },
+    //一些组件
     components: {
-      components: ["Badge", "VPCard"],
+      components: ["Badge", "VPCard","SiteInfo"],
     },
 
     // 此处开启了很多功能用于演示，你应仅保留用到的功能。
