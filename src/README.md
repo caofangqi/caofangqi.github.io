@@ -5,6 +5,7 @@ icon: home
 title: 老叶札记-主页
 heroImage: https://theme-hope-assets.vuejs.press/logo.svg
 heroText: 老叶札记
+bgImage: https://caofangqi.github.io/assets/images/20240505homexibiantianye.jpg
 heroFullScreen: true
 tagline: 无善无恶是心之体，有善有恶是意之动，知善知恶是良知，为善去恶是格物
 projects:
