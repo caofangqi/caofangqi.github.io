@@ -33,6 +33,7 @@ export default hopeTheme({
   blog: {
     description: "要在这个世界留下点什么，证明我来过",
     intro: "/intro.html",
+    timeline: "",
     medias: {
       // Baidu: "https://example.com",
       // BiliBili: "https://example.com",
@@ -107,12 +108,12 @@ export default hopeTheme({
     mdEnhance: {
       align: true,
       attrs: true,
-      codetabs: true,
+      //codetabs: true,
       component: true,
       demo: true,
-      figure: true,
-      imgLazyload: true,
-      imgSize: true,
+      //figure: true,
+      //imgLazyload: true,
+      //imgSize: true,
       include: true,
       mark: true,
       stylize: [
@@ -130,7 +131,7 @@ export default hopeTheme({
       ],
       sub: true,
       sup: true,
-      tabs: true,
+      //tabs: true,
       tasklist: true,
       vPre: true,
 
