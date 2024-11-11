@@ -7,7 +7,7 @@ export default hopeTheme({
   hostname: "https://caofangqi.github.io",
 
   author: {
-    name: "行知",
+    name: "叶子",
     url: "https://caofangqi.github.io",
   },
 
@@ -87,7 +87,9 @@ export default hopeTheme({
 
   // 在这里配置主题提供的插件
   plugins: {
-    blog: true,
+    blog: {
+      excerptLength: 0,
+    },
     search: true,
 
     // 启用之前需安装 @waline/client
