@@ -9,11 +9,12 @@ export default hopeTheme({
   author: {
     name: "叶子",
     url: "https://caofangqi.github.io",
+    email: "caoofangqi@outlook.com"
   },
 
   iconAssets: "fontawesome-with-brands",
 
-  logo: "https://theme-hope-assets.vuejs.press/logo.svg",
+  logo: "logo.svg",
   //仓库配置
   repo: "caofangqi/caofangqi.github.io",
 
