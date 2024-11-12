@@ -3,7 +3,7 @@ home: true
 layout: BlogHome
 icon: home
 title: 叶落知秋-主页
-heroImage: logo128.svg
+#heroImage: logo128.svg
 heroText: 叶落知秋
 bgImage: https://caofangqi.github.io/assets/images/20240505homexibiantianye.jpg
 heroFullScreen: true
