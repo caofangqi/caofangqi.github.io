@@ -1,7 +1,11 @@
 import { defineUserConfig } from "vuepress";
 import theme from "./theme.js";
+import { googleAnalyticsPlugin } from '@vuepress/plugin-google-analytics'
+
+
 
 export default defineUserConfig({
+  
   //站点基本路径
   base: "/",
   //站点的语言
@@ -12,6 +16,16 @@ export default defineUserConfig({
   description: "记录经历的，思考的，认知到的等一些心得体会，希望对人有所帮助",
 
   theme,
+  
+  plugins: [
+
+      googleAnalyticsPlugin({
+        id: 'G-DS79DGKK18',
+        debug: false,
+      }),
+
+  
+  ],
 
   // 和 PWA 一起启用
   // shouldPrefetch: false,
