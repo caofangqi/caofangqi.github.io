@@ -27,14 +27,14 @@ export default hopeTheme({
   sidebar,
 
   // 页脚
-  footer: "默认页脚",
+  footer: "到底了",
   displayFooter: true,
 
   // 博客相关
   blog: {
     description: "要在这个世界留下点什么，证明我来过",
     intro: "/intro.html",
-    timeline: "",
+    timeline: "时间轴",
     medias: {
       // Baidu: "https://example.com",
       // BiliBili: "https://example.com",
@@ -88,6 +88,12 @@ export default hopeTheme({
 
   // 在这里配置主题提供的插件
   plugins: {
+    watermark: {
+      enabled: true,
+      watermarkOptions:{
+        content:"叶落知秋"
+      }
+    },
     blog: {
       excerptLength: 0,
     },
