@@ -2,7 +2,7 @@
 title: 常用的 Linux 命令
 date: 2024-11-19 22:50:00
 category:
-    - Linux 笔记
+    - Linux 
     - 备忘录
 tag: 
     - Linux 
