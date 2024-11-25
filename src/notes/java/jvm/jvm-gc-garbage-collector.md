@@ -2,11 +2,8 @@
 title: Java 中经典垃圾回收器(Garbage Collector)
 date: 2024-11-24 22:50:00
 category:
-    - Java 
-    - JVM
     - 笔记
 tag: 
-    - 笔记
     - Java
     - JVM
     - 后端开发备忘录

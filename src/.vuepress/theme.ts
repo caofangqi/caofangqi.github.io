@@ -29,6 +29,7 @@ export default hopeTheme({
   // 页脚
   footer: "到底了",
   displayFooter: true,
+  toc: true,
 
   // 博客相关
   blog: {
