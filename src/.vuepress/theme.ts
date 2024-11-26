@@ -4,13 +4,14 @@ import sidebar from "./sidebar.js";
 import { MR_HOPE_AVATAR } from "./logo.js";
 
 export default hopeTheme({
-  hostname: "https://caofangqi.github.io",
+  hostname: "https://yeluozhiqiu.site",
 
   author: {
     name: "叶子",
-    url: "https://caofangqi.github.io",
+    url: "https://yeluozhiqiu.site",
     email: "caoofangqi@outlook.com"
   },
+  pageInfo:["Author", "Original", "Date", "Category", "Tag", "ReadingTime","Word"],
 
   iconAssets: "fontawesome-with-brands",
 
