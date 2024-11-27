@@ -6,4 +6,5 @@ tagline: 无善无恶心之体，有善有恶意之动，知善知恶是良知�
 footer: 知行合一、心即理、致良知
 article: false
 ---
+[鸟哥 Linux 命令大全](https://man.niaoge.com/)
 <Catalog/>
