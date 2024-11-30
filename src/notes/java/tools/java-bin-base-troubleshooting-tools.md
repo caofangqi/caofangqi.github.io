@@ -113,10 +113,6 @@ jinfo 可以实时查看和调整虚拟机各项参数。
 Usage:
     jinfo [option] <pid>
         (to connect to running process)
-    jinfo [option] <executable <core>
-        (to connect to a core file)
-    jinfo [option] [server_id@]<remote server IP or hostname>
-        (to connect to remote debug server)
 
 where <option> is one of:
     -flag <name>         to print the value of the named VM flag
@@ -127,3 +123,109 @@ where <option> is one of:
     <no option>          to print both of the above
     -h | -help           to print this help message
 ```
+```shell title='常用命令'
+#查看参数值
+jinfo -flag  <参数名>
+#打印所有虚拟机参数
+jinfo -flags 
+#打印 系统属性值 System.getProperties()
+jinfo -sysprops
+
+```
+
+## jmap java 内存映像工具
+
+jmap(Memory Map for Java)命令用于生成堆转储快照（一般称为heapdump或dump文件）,
+jmap的作用不仅仅是为了获取dump文件，它还可以查询finalize执行队列、Java堆和方法区的详细信息，如空间使用率、当前使用的是哪种收集器等。
+```shell title='help'
+Usage:
+    jmap [option] <pid>
+        (to connect to running process)
+where <option> is one of:
+    <none>               to print same info as Solaris pmap
+    -heap                to print java heap summary
+    -histo[:live]        to print histogram of java object heap; if the "live"
+                         suboption is specified, only count live objects
+    -clstats             to print class loader statistics
+    -finalizerinfo       to print information on objects awaiting finalization
+    -dump:<dump-options> to dump java heap in hprof binary format
+                         dump-options:
+                           live         dump only live objects; if not specified,
+                                        all objects in the heap are dumped.
+                           format=b     binary format
+                           file=<file>  dump heap to <file>
+                         Example: jmap -dump:live,format=b,file=heap.bin <pid>
+    -F                   force. Use with -dump:<dump-options> <pid> or -histo
+                         to force a heap dump or histogram when <pid> does not
+                         respond. The "live" suboption is not supported
+                         in this mode.
+    -h | -help           to print this help message
+    -J<flag>             to pass <flag> directly to the runtime system
+```
+```shell title='常用命令'
+#显示堆中对象统计信息 一般排查 FullGG 来源 堆溢出问题可以试试
+jmap -histo[:live] 111 
+#和上面比就是 带 live 会过滤只展示存活对象
+jmap -histo 111
+#打印堆详细信息 使用哪种垃圾回收器、参数配置、分代情况等
+jmap -heap 111 
+```
+
+## jhat 分析dump文件工具，很少用 除非没别的工具用 
+```shell title='命令格式'
+Usage:  jhat [-stack <bool>] [-refs <bool>] [-port <port>] [-baseline <file>] [-debug <int>] [-version] [-h|-help] <file>
+
+	-J<flag>          Pass <flag> directly to the runtime system. For
+			  example, -J-mx512m to use a maximum heap size of 512MB
+	-stack false:     Turn off tracking object allocation call stack.
+	-refs false:      Turn off tracking of references to objects
+	-port <port>:     Set the port for the HTTP server.  Defaults to 7000
+	-exclude <file>:  Specify a file that lists data members that should
+			  be excluded from the reachableFrom query.
+	-baseline <file>: Specify a baseline object dump.  Objects in
+			  both heap dumps with the same ID and same class will
+			  be marked as not being "new".
+	-debug <int>:     Set debug level.
+			    0:  No debug output
+			    1:  Debug hprof file parsing
+			    2:  Debug hprof file parsing, no server
+	-version          Report version number
+	-h|-help          Print this help and exit
+	<file>            The file to read
+
+For a dump file that contains multiple heap dumps,
+you may specify which dump in the file
+by appending "#<number>" to the file name, i.e. "foo.hprof#3".
+```
+```shell title='使用'
+jhat dumpFileName
+```
+
+## jstack 堆栈跟踪工具、排查线程死锁、线程都在干什么用的
+生成虚拟机当前时刻的线程快照，排查线程死锁、线程都在干什么用的。
+```shell title='命令格式'
+Usage:
+    jstack [-l] <pid>
+        (to connect to running process)
+    jstack -F [-m] [-l] <pid>
+        (to connect to a hung process)
+    jstack [-m] [-l] <executable> <core>
+        (to connect to a core file)
+    jstack [-m] [-l] [server_id@]<remote server IP or hostname>
+        (to connect to a remote debug server)
+
+Options:
+    -F  to force a thread dump. Use when jstack <pid> does not respond (process is hung)(强制输出线程堆栈)
+    -m  to print both java and native frames (mixed mode)(如果使用了本地方法，可以显示 C/C++的堆栈)
+    -l  long listing. Prints additional information about locks（除堆栈外，打印锁的信息）
+    -h or -help to print this help message
+```
+```shell title='常用命令'
+#输出带锁的线程堆栈信息
+jstack -l pid
+#看看 Dubbo 线程都在干嘛
+jstack -l pid | grep Dubbo
+#输出堆栈生成文件
+jstack -l pid > td.txt
+```
+
