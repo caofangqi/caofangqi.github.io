@@ -4,8 +4,13 @@ export default navbar([
   "/",
   {
     text: "随笔",
-    icon: "book",
+    icon: "fa-solid fa-pen-nib",
     link: "/essay/",
+  },
+  {
+    text: "笔记库",
+    icon: "fa-solid fa-book-open",
+    link: "/notes/",
   },
   // "/demo/",
   // {
