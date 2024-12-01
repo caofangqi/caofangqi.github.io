@@ -5,6 +5,7 @@ category:
     - 笔记
 tag: 
     - Linux 
+    - 命令
     - 后端开发备忘录
 description: 记录日常工作中常用的 linux 命令、持续更新
 ---
