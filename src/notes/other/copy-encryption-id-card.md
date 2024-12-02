@@ -44,5 +44,5 @@ description: 记录加密门禁卡复制操作步骤
 
 
 # 参考文档
-[NFC 手机模拟加密门禁卡](https://blog.csdn.net/pingis58/article/details/125458697)
-[MIFARE Classic Tool (MCT)](https://github.com/ikarus23/MifareClassicTool/blob/master/README.zh-CN.md)
+* [NFC 手机模拟加密门禁卡](https://blog.csdn.net/pingis58/article/details/125458697)
+* [MIFARE Classic Tool (MCT)](https://github.com/ikarus23/MifareClassicTool/blob/master/README.zh-CN.md)
