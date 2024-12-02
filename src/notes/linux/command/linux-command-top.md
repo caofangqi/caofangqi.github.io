@@ -13,15 +13,15 @@ description: Top 命令使用详解
 top命令实时对系统处理器的状态监视.它将显示系统中CPU最“敏感”的任务列表.该命令可以按CPU使用.内存使用和执行时间对任务进行排序；
 
 > top [选项]
-```shell title='执行结果(Mac 系统下执行，和 Linux 有所区别)'
-Processes: 708 total, 2 running, 706 sleeping, 3632 threads                                                                                                                         23:35:18
-Load Avg: 3.46, 3.03, 2.98  CPU usage: 4.67% user, 2.14% sys, 93.17% idle  SharedLibs: 526M resident, 56M data, 37M linkedit.
-MemRegions: 738801 total, 15G resident, 192M private, 4033M shared. PhysMem: 31G used (3742M wired, 2547M compressor), 746M unused.
-VM: 76T vsize, 3570M framework vsize, 15712284(0) swapins, 17316364(0) swapouts. Networks: packets: 27920551/45G in, 36163976/63G out. Disks: 24495502/351G read, 10914774/214G written.
+```shell title='执行结果()'
+top - 10:01:36 up 517 days, 16:07,  2 users,  load average: 6.90, 4.85, 3.76
+Tasks:  63 total,   1 running,  13 sleeping,   0 stopped,  49 zombie
+%Cpu(s): 16.4 us,  4.9 sy,  0.0 ni, 75.8 id,  0.0 wa,  0.0 hi,  2.9 si,  0.0 st
+KiB Mem : 12932840+total,  2151768 free, 10807212+used, 19104504 buff/cache
+KiB Swap:        0 total,        0 free,        0 used. 18860988 avail Mem 
 
-PID    COMMAND      %CPU TIME     #TH    #WQ  #PORT MEM    PURG   CMPRS  PGRP  PPID  STATE    BOOSTS           %CPU_ME %CPU_OTHRS UID  FAULTS    COW      MSGSENT    MSGRECV    SYSBSD
-166    WindowServer 26.6 09:23:08 15     5    3769  1343M- 3080K  177M   166   1     sleeping *0[1]            0.42035 0.42632    88   43069198+ 986154   221849888+ 206665037+ 389680871+
-43525  top          9.5  00:01.68 1/1    0    29+   8588K+ 0B     0B     43525 
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ COMMAND                                                                                                                                    
+      1 tomcat    20   0   14.0g   2.7g  12632 S   6.6  2.1   2122:28 java 
 ```
 ## 命令选项
 ```shell title='选项'
@@ -58,17 +58,17 @@ w：将当前设置写入~/.toprc文件中。
 ```
 ## 显示字段解释
 ```shell title='字段解释'
-top - 09:44:56[当前系统时间],
-16 days[系统已经运行了16天],
-1 user[个用户当前登录],
-load average: 9.59, 4.75, 1.92[系统负载，即任务队列的平均长度]
-Tasks: 145 total[总进程数],
-2 running[正在运行的进程数],
-143 sleeping[睡眠的进程数],
+top - 10:01:36[当前系统时间],
+517 days[系统已经运行了16天],
+2 user[个用户当前登录],
+load average: 6.90, 4.85, 3.76[分别为 1 分钟、5分钟、15 分钟系统负载，即任务队列的平均长度]
+Tasks: 63 total[总进程数],
+1 running[正在运行的进程数],
+13 sleeping[睡眠的进程数],
 0 stopped[停止的进程数],
-0 zombie[冻结进程数],
-Cpu(s): 99.8%us[用户空间占用CPU百分比],
-0.1%sy[内核空间占用CPU百分比],
+49 zombie[冻结进程数],
+Cpu(s): 16.4%us[用户空间占用CPU百分比],
+4.9%sy[内核空间占用CPU百分比],
 0.0%ni[用户进程空间内改变过优先级的进程占用CPU百分比],
 0.2%id[空闲CPU百分比], 0.0%wa[等待输入输出的CPU时间百分比],
 0.0%hi[],
@@ -84,9 +84,9 @@ Swap:  5144568k total[交换区总量],
 ```
 ## 常用参数
 ```shell title='常用参数'
-#查看该进程下线程状态
+#查看该进程下各个线程占用情况
 top -Hp 进程号
-
 ```
+
 ## 参考文档
 * [鸟哥命令大全-top 命令](https://man.niaoge.com/top)
