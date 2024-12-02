@@ -15,6 +15,7 @@ description: 记录加密门禁卡复制操作步骤
 使用第三方软件[MifareClassicTool](https://github.com/ikarus23/MifareClassicTool/blob/master/README.zh-CN.md)读取UID,
 需要一张CUID卡(不能使用UID卡)，某宝上一块多一张；
 
+
 步骤如下：
 1. 先读取加密卡的UID
 2. 再读取CUID卡的数据，然后将CUID卡的UID改为加密卡一样的UID
