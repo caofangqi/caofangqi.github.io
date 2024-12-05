@@ -28,7 +28,7 @@ export default hopeTheme({
   sidebar,
 
   // 页脚
-  footer: "到底了",
+  footer: "锲而不舍，金石可镂",
   displayFooter: true,
   toc: true,
 
@@ -36,7 +36,7 @@ export default hopeTheme({
   blog: {
     description: "要在这个世界留下点什么，证明我来过",
     intro: "/intro.html",
-    timeline: "时间轴",
+    timeline: "人生天地之间，若白驹过隙，忽然而已",
     medias: {
       // Baidu: "https://example.com",
       // BiliBili: "https://example.com",
