@@ -50,7 +50,7 @@ PEXPIRE KEY_NAME 10000
 设置 Key 在多少 ==秒== 之后过期
 ```shell title='命令语法'
 #设置 Key 10秒后过期， 参数为秒值 
-EXPIRE KEY_NAME 10000
+EXPIRE KEY_NAME 10
 ```
 
 ### Rename 修改Key的名称
@@ -73,7 +73,6 @@ ttl KEY_NAME
 当 key 不存在时，返回 -2 。 当 key 存在但没有设置剩余生存时间时，返回 -1 。 否则，以秒为单位，返回 key 的剩余生存时间。
 ### PTTL命令   以 ==毫秒== 为单位返回 key 的剩余的过期时间。
 ```shell title='命令语法'
-#设置 Key 10秒后过期， 参数为毫秒值 
 pttl KEY_NAME 
 ```
 当 key 不存在时，返回 -2 。 当 key 存在但没有设置剩余生存时间时，返回 -1 。 否则，以毫秒为单位，返回 key 的剩余生存时间。
