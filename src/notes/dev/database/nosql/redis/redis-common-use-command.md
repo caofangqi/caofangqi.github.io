@@ -368,6 +368,138 @@ RPOP KEY_NAME
 列表的最后一个元素。 当列表不存在时，返回 nil 。
 
 
+## 字典 Hash 键值对
+> 每个哈希最多可以存储 4,294,967,295（2^32-1）个字段值对。哈希值仅受托管 Redis 部署的 VM 上的整体内存的限制。
+
+### HLEN  获取 hash 中字段数量
+```shell title='Syntax'
+HLEN key
+```
+返回 hash 中 fields 的数量
+```shell title='Examples'
+redis> HSET myhash field1 "Hello"
+(integer) 1
+redis> HSET myhash field2 "World"
+(integer) 1
+redis> HLEN myhash
+(integer) 2
+```
+
+### HSET: 设置 Hash 上一个或多个字段值
+```shell title='Syntax'
+HSET key field value [field value ...]
+```
+返回 设置成功的字段数量
+```shell title='Examples'
+> HSET myhash field1 "Hello"
+(integer) 1
+> HGET myhash field1
+"Hello"
+> HSET myhash field2 "Hi" field3 "World"
+(integer) 2
+> HGET myhash field2
+"Hi"
+> HGET myhash field3
+"World"
+> HGETALL myhash
+1) "field1"
+2) "Hello"
+3) "field2"
+4) "Hi"
+5) "field3"
+6) "World"
+```
+### HGETALL 
+```shell title='Syntax'
+HGETALL key
+```
+返回存储在 key 的哈希的所有字段和值。在返回值中，每个字段名称后面都跟着它的值。
+
+```shell title='Examples'
+redis> HSET myhash field1 "Hello"
+(integer) 1
+redis> HSET myhash field2 "World"
+(integer) 1
+redis> HGETALL myhash
+1) "field1"
+2) "Hello"
+3) "field2"
+4) "World"
+```
+### HKEYS 获取hash所有字段
+```shell title='Syntax'
+HKEYS key
+```
+返回所有字段
+```shell title='Examples'
+redis> HSET myhash field1 "Hello"
+(integer) 1
+redis> HSET myhash field2 "World"
+(integer) 1
+redis> HKEYS myhash
+1) "field1"
+2) "field2"
+```
+### HVALS 返回 hash 所有值
+```shell title='Syntax'
+HVALS key
+```
+返回 hash 所有值
+
+```shell title='Examples'
+redis> HSET myhash field1 "Hello"
+(integer) 1
+redis> HSET myhash field2 "World"
+(integer) 1
+redis> HVALS myhash
+1) "Hello"
+2) "World"
+```
+
+### HGET 查询 Hash 指定字段值
+```shell title='Syntax'
+HGET key field
+```
+返回 Hash 指定字段值
+```shell title='Examples'
+> HSET myhash field1 "foo"
+(integer) 1
+> HGET myhash field1
+"foo"
+> HGET myhash field2
+(nil)
+```
+### HMGET 查询 Hash 中多个字段值
+```shell title='Syntax'
+HMGET key field [field ...]
+```
+返回 Hash 中多个指定字段值
+```shell title='Examples'
+redis> HSET myhash field1 "Hello"
+(integer) 1
+redis> HSET myhash field2 "World"
+(integer) 1
+redis> HMGET myhash field1 field2 nofield
+1) "Hello"
+2) "World"
+3) (nil)
+```
+### HINCRBY 指定字段增加指定的数值
+```shell title='Syntax'
+HINCRBY key field increment
+```
+返回增加之后的值  
+由于增量字段是有符号的，所以可以增加或者减少
+```shell title='Examples'
+redis> HSET myhash field 5
+(integer) 1
+redis> HINCRBY myhash field 1
+(integer) 6
+redis> HINCRBY myhash field -1
+(integer) 5
+redis> HINCRBY myhash field -10
+(integer) -5
+```
 
 
 
