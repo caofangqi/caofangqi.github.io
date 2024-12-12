@@ -368,7 +368,7 @@ RPOP KEY_NAME
 列表的最后一个元素。 当列表不存在时，返回 nil 。
 
 
-## 字典 Hash 键值对
+## 字典 Hashes 键值对
 > 每个哈希最多可以存储 4,294,967,295（2^32-1）个字段值对。哈希值仅受托管 Redis 部署的 VM 上的整体内存的限制。
 
 ### HLEN  获取 hash 中字段数量
@@ -499,6 +499,172 @@ redis> HINCRBY myhash field -1
 (integer) 5
 redis> HINCRBY myhash field -10
 (integer) -5
+```
+
+## Sets 无序集合
+Redis 集合是唯一字符串的无序集合，使用 Redis 集合，可以在 O（1）时间内添加、删除和测试是否存在（换句话说，无论集合元素的数量如何）。
+
+### SADD 新增指定成员到集合中
+```shell title='Syntax'
+SADD key member [member ...]
+```
+将指定的成员添加到存储在 key 的集合中。已经是该集合成员的指定成员将被忽略。如果 key 不存在，则在添加指定成员之前创建一个新集合。
+```shell title='Examples'
+redis> SADD myset "Hello"
+(integer) 1
+redis> SADD myset "World"
+(integer) 1
+redis> SADD myset "World"
+(integer) 0
+redis> SMEMBERS myset
+1) "Hello"
+2) "World"
+```
+
+### SREM 删除集合成员
+```shell title='Syntax'
+SREM key member [member ...]
+```
+从存储在 key 的集合中删除指定的成员。不是该集合成员的指定成员将被忽略。如果 key 不存在，则将其视为空集.
+```shell title='Examples'
+redis> SADD myset "one"
+(integer) 1
+redis> SADD myset "two"
+(integer) 1
+redis> SADD myset "three"
+(integer) 1
+redis> SREM myset "one"
+(integer) 1
+redis> SREM myset "four"
+(integer) 0
+redis> SMEMBERS myset
+1) "two"
+2) "three"
+```
+### SISMEMBER  判断成员是否存在集合
+```shell title='Syntax'
+SISMEMBER key member
+```
+如果存在，返回 1，不存在返回 0
+```shell title='Examples'
+redis> SADD myset "one"
+(integer) 1
+redis> SISMEMBER myset "one"
+(integer) 1
+redis> SISMEMBER myset "two"
+(integer) 0
+```
+### SINTER 获取给定集合的交集成员
+```shell title='Syntax'
+SINTER key [key ...]
+```
+返回给定集合的交集
+> key1 = {a,b,c,d}
+> key2 = {c}
+> key3 = {a,c,e}
+> SINTER key1 key2 key3 = {c}
+
+```shell title='Examples'
+redis> SADD key1 "a"
+(integer) 1
+redis> SADD key1 "b"
+(integer) 1
+redis> SADD key1 "c"
+(integer) 1
+redis> SADD key2 "c"
+(integer) 1
+redis> SADD key2 "d"
+(integer) 1
+redis> SADD key2 "e"
+(integer) 1
+redis> SINTER key1 key2
+1) "c"
+```
+### SDIFF 查询差集
+```shell title='Syntax'
+SDIFF key [key ...]
+```
+返回第一个集合和其他集合之间的差集
+> key1 = {a,b,c,d}
+key2 = {c}
+key3 = {a,c,e}
+SDIFF key1 key2 key3 = {b,d}
+```shell title='Examples'
+redis> SADD key1 "a"
+(integer) 1
+redis> SADD key1 "b"
+(integer) 1
+redis> SADD key1 "c"
+(integer) 1
+redis> SADD key2 "c"
+(integer) 1
+redis> SADD key2 "d"
+(integer) 1
+redis> SADD key2 "e"
+(integer) 1
+redis> SDIFF key1 key2
+1) "a"
+2) "b"
+redis> SDIFF key2 key1
+1) "d"
+2) "e"
+```
+### SUNION 获取并集
+```shell title='Syntax'
+SUNION key [key ...]
+```
+返回由所有给定集合的并集产生的集合成员。
+> key1 = {a,b,c,d}
+key2 = {c}
+key3 = {a,c,e}
+SUNION key1 key2 key3 = {a,b,c,d,e}
+```shell title='Examples'
+redis> SADD key1 "a"
+(integer) 1
+redis> SADD key1 "b"
+(integer) 1
+redis> SADD key1 "c"
+(integer) 1
+redis> SADD key2 "c"
+(integer) 1
+redis> SADD key2 "d"
+(integer) 1
+redis> SADD key2 "e"
+(integer) 1
+redis> SUNION key1 key2
+1) "a"
+2) "b"
+3) "c"
+4) "d"
+5) "e"
+```
+
+### SCARD 查询集合数量
+```shell title='Syntax'
+SCARD key
+```
+返回集合数量。
+```shell title='Examples'
+redis> SADD myset "Hello"
+(integer) 1
+redis> SADD myset "World"
+(integer) 1
+redis> SCARD myset
+(integer) 2
+```
+### SMEMBERS 查询所有成员
+```shell title='Syntax'
+SMEMBERS key
+```
+返回存储在 key 的设置值的所有成员。
+```shell title='Examples'
+redis> SADD myset "Hello"
+(integer) 1
+redis> SADD myset "World"
+(integer) 1
+redis> SMEMBERS myset
+1) "Hello"
+2) "World"
 ```
 
 
