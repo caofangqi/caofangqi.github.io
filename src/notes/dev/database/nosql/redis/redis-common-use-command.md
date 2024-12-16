@@ -559,11 +559,12 @@ redis> SISMEMBER myset "two"
 SINTER key [key ...]
 ```
 返回给定集合的交集
-> key1 = {a,b,c,d}
-> key2 = {c}
-> key3 = {a,c,e}
-> SINTER key1 key2 key3 = {c}
-
+```shell title='伪代码'
+key1 = {a,b,c,d}
+key2 = {c}
+key3 = {a,c,e}
+SINTER key1 key2 key3 = {c}
+```
 ```shell title='Examples'
 redis> SADD key1 "a"
 (integer) 1
@@ -585,10 +586,13 @@ redis> SINTER key1 key2
 SDIFF key [key ...]
 ```
 返回第一个集合和其他集合之间的差集
-> key1 = {a,b,c,d}
+```shell title='伪代码'
+key1 = {a,b,c,d}
 key2 = {c}
 key3 = {a,c,e}
 SDIFF key1 key2 key3 = {b,d}
+```
+
 ```shell title='Examples'
 redis> SADD key1 "a"
 (integer) 1
@@ -614,10 +618,13 @@ redis> SDIFF key2 key1
 SUNION key [key ...]
 ```
 返回由所有给定集合的并集产生的集合成员。
-> key1 = {a,b,c,d}
+```shell title='伪代码'
+key1 = {a,b,c,d}
 key2 = {c}
 key3 = {a,c,e}
 SUNION key1 key2 key3 = {a,b,c,d,e}
+```
+
 ```shell title='Examples'
 redis> SADD key1 "a"
 (integer) 1
