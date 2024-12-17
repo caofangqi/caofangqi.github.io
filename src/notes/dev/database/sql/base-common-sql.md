@@ -205,14 +205,16 @@ case when 可以根据某个条件来执行不同的SQL语句。例如，当某�
 --写法一 返回第一个value=compare_value为true的分支的结果。
 CASE value
     WHEN compare_value THEN result
-    [WHEN compare_value THEN result ...]
-    [ELSE result]
+    WHEN compare_value THEN result
+    ...
+    ELSE result
 END
 --写法二 返回第一个condition为true的分支的结果
 CASE
     WHEN condition THEN result
-    [WHEN condition THEN result ...]
-    [ELSE result]
+    WHEN condition THEN result
+    ...
+    ELSE result]
 END
 -- 如果没有一个value=compare_value或者condition为true，那么就会返回ELSE对应的结果，如果没有ELSE分支，那么返回NULL。
 ```
