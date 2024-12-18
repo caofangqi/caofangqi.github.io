@@ -9,6 +9,11 @@ tag:
   - MySQL
 star: true
 ---
+
+::: warning
+由于本人日常使用 Mysql 居多，记录的一些语法和函数等可能在其他数据库不兼容，需要注意。
+:::
+
 # SQL(Structured Query Language) 备忘录
 > SQL（发音为字母S-Q-L或sequel）是Structured Query Language（结构化查询语言）的缩写。SQL是一种专门用来与数据库沟通的语言。
 
@@ -218,13 +223,63 @@ CASE
 END
 -- 如果没有一个value=compare_value或者condition为true，那么就会返回ELSE对应的结果，如果没有ELSE分支，那么返回NULL。
 ```
-
+```sql title='Example'
+mysql> SELECT CASE 1 WHEN 1 THEN 'one'
+    ->     WHEN 2 THEN 'two' ELSE 'more' END;
+        -> 'one'
+mysql> SELECT CASE WHEN 1>0 THEN 'true' ELSE 'false' END;
+        -> 'true'
+mysql> SELECT CASE BINARY 'B'
+    ->     WHEN 'a' THEN 1 WHEN 'b' THEN 2 END;
+        -> NULL
+```
+### IF 函数
+```sql title='Syntax'
+--如果 表达式 expr1 结果为 true ,则返回 expr2 的结果，否则返回 expr3 的结果。
+IF(expr1,expr2,expr3)
+```
+```shell title='Example'
+mysql> SELECT IF(1>2,2,3);
+        -> 3
+mysql> SELECT IF(1<2,'yes','no');
+        -> 'yes'
+mysql> SELECT IF(STRCMP('test','test1'),'no','yes');
+        -> 'no'
+```
+### IFNULL 函数
+```sql title='Syntax'
+--如果 表达式 expr1 结果为 NULL ,则返回 expr2 的结果，否则返回 expr1 的结果。
+IFNULL(expr1,expr2)
+```
+```shell title='Example'
+mysql> SELECT IFNULL(1,0);
+        -> 1
+mysql> SELECT IFNULL(NULL,10);
+        -> 10
+mysql> SELECT IFNULL(1/0,10);
+        -> 10
+mysql> SELECT IFNULL(1/0,'yes');
+        -> 'yes'
+```
+### NULLIF 函数
+```sql title='Syntax'
+--如果 expr1 == expr2 结果为 true  ,则返回 NULL ，否则返回 expr1 的结果。
+NULLIF(expr1,expr2)
+```
+```shell title='Example'
+mysql> SELECT NULLIF(1,1);
+        -> NULL
+mysql> SELECT NULLIF(1,2);
+        -> 1
+```
 
 
 
 
 ## 参考文档
-* [Flow Control Functions](https://dev.mysql.com/doc/refman/8.0/en/flow-control-functions.html#operator_case)
+
+* [官方文档 sql-statements](https://dev.mysql.com/doc/refman/5.7/en/sql-statements.html)
+* [官方文档 Flow Control Functions](https://dev.mysql.com/doc/refman/8.0/en/flow-control-functions.html#operator_case)
 *  [SQL 必知必会](https://weread.qq.com/web/reader/f7632a30720befadf7636bbka8b3222028ea8baa56554b9#outline?noScroll=1)
 *  [JavaGuide SQL 语法基础知识总结](https://javaguide.cn/database/sql/sql-syntax-summary.html)
 *  [掘金 SQL 语法速成手册](https://juejin.cn/post/6844903790571700231)
