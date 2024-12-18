@@ -11,7 +11,7 @@ star: true
 ---
 
 ::: warning
-由于本人日常使用 Mysql 居多，记录的一些语法和函数等可能在其他数据库不兼容，需要注意。
+由于本人日常使用 Mysql 居多，记录的一些语法和函数其他数据库可能不支持，需要注意
 :::
 
 # SQL(Structured Query Language) 备忘录
