@@ -1581,3 +1581,7 @@ with 语句实现原理建立在上下文管理器之上。
 
 
 在文件对象中定义了 __enter__ 和 __exit__ 方法，即文件对象也实现了上下文管理器，首先调用 __enter__ 方法，然后执行 with 语句中的代码，最后调用 __exit__ 方法。 即使出现错误，也会调用 __exit__ 方法，也就是会关闭文件流。
+
+## 参考文档
+* [Python 编程 从入门到实践](https://weread.qq.com/web/reader/08232ac0720befa90825d88#outline?noScroll=1)
+* [Python3 菜鸟教程](https://www.runoob.com/python3/python3-errors-execptions.html)
