@@ -9,6 +9,9 @@ bgImage: /assets/images/20240505homexibiantianye.jpg
 heroFullScreen: true
 tagline: 无善无恶心之体，有善有恶意之动，知善知恶是良知，为善去恶是格物
 projects:
+  - name: 箴言
+    desc: 总有那么一句话触动你
+    link: knowledge/motto.md
   - icon: https://wfqqreader-1252317822.image.myqcloud.com/cover/997/853997/t6_853997.jpg
     name: 阳明心学
     desc: 圣人之道，吾性自足
