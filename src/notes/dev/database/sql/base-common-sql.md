@@ -153,6 +153,7 @@ WHERE cust_id IN (SELECT cust_id
 ### 内连接（INNER JOIN）
 内连接又称等值连接，使用 INNER JOIN 关键字。在没有条件语句的情况下返回笛卡尔积。
 自连接可以看成内连接的一种，只是连接的表是自身而已。
+> INNER JOIN 只返回匹配的行，vendors.vend_id = products.vend_id; 任意一边为空都不会返回
 ```sql title='Example'
 SELECT vend_name, prod_name, prod_price
 FROM vendors INNER JOIN products
@@ -167,6 +168,7 @@ AND c2.cust_contact = 'Jim Jones';
 ```
 ### 自然连接 （NATURAL JOIN）
 自然连接是把同名列通过 = 测试连接起来的，同名列可以有多个。
+自动查询两个表中所有相同字段然后进行等值链接，等同于使用 inner join 然后 on 所有相同字段进行 = 判断
 ```sql title='Example'
 SELECT *
 FROM Products
@@ -174,14 +176,14 @@ NATURAL JOIN Customers;
 
 ```
 ### 左连接（LEFT JOIN ）
-返回左表中的所有行，即使右表中没有满足条件的行也是如此。
+返回左表的全部行和右表满足ON条件的行，如果左表的行在右表中没有匹配，那么这一行右表中对应数据用NULL代替。
 ```sql title='Example'
 SELECT customers.cust_id, orders.order_num
 FROM customers LEFT JOIN orders
 ON customers.cust_id = orders.cust_id;
 ```
 ### 右连接（RIGHT JOIN）
-返回右表中的所有行，即使左表中没有满足条件的行也是如此。
+返回右表的全部行和左表满足ON条件的行，如果右表的行在左表中没有匹配，那么这一行左表中对应数据用NULL代替
 
 ```sql title='Example'
 SELECT customers.cust_id, orders.order_num
@@ -189,6 +191,15 @@ FROM customers RIGHT JOIN orders
 ON customers.cust_id = orders.cust_id;
 
 ```
+### FULL OUTER JOIN
+FULL JOIN 会从左表 和右表 那里返回所有的行。如果其中一个表的数据行在另一个表中没有匹配的行，那么对面的数据用NULL代替
+```sql title='Example'
+SELECT customers.cust_id, orders.order_num
+FROM customers FULL OUTER JOIN orders
+ON customers.cust_id = orders.cust_id;
+```
+
+
 ### 组合（UNION）
 UNION 运算符将两个或更多查询的结果组合起来，并生成一个结果集，其中包含来自 UNION 中参与查询的提取行。
 UNION 基本规则
