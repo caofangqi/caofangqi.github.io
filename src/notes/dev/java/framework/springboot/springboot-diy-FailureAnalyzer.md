@@ -55,7 +55,7 @@ com.webuy.training.springbootdemo.failureanalyzer.DiyFailureAnalyzer, \
 com.webuy.training.springbootdemo.failureanalyzer.DiyTwoFailureAnalyzer
 ```
 
-相对比实现 FailureAnalyzer 接口，推荐继承 AbstractFailureAnalyzer 抽象类。
+对比直接实现 FailureAnalyzer 接口，推荐继承 AbstractFailureAnalyzer 抽象类。
 
 AbstractFailureAnalyzer 是 FailureAnalyzer 的一个扩展实现，该扩展会检查要处理的异常的类型中是否存在指定的异常类型(该扩展的子类泛型类型)。如果需要处理指定异常的话，可以继承该抽象类 在子类泛型中指定 需要处理的异常，如果应用启动过程中抛出该异常，会自动匹配到该类进行处理。
 
