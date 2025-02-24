@@ -3,7 +3,6 @@ title: Git 清理大文件 BFG
 date: 2024-12-04 23:20:00
 category:
     - 笔记
-    - 经验
 tag: 
     - Git
     - 后端开发备忘录
