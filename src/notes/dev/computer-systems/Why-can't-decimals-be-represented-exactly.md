@@ -41,9 +41,10 @@ description: 十进制小数转换二进制精度丢失问题
 > 0.299999999999999988897769753748434595763683319091796875
 
 所以在要求精度的场景，需要格外注意。
-[使用 BigDecimal 需要注意的](notes/dev/java/base/BigDecimal-construction-precision.md)
+[使用 BigDecimal 需要注意的](/notes/dev/java/base/BigDecimal-construction-precision.md)
 
 # 参考资料
 
-[十进制小数转化为二进制小数](https://www.runoob.com/w3cnote/decimal-decimals-are-converted-to-binary-fractions.html)
-[IEEE-754 Floating Point Converter](https://www.h-schmidt.net/FloatConverter/IEEE754.html)
+* [十进制小数转化为二进制小数](https://www.runoob.com/w3cnote/decimal-decimals-are-converted-to-binary-fractions.html)
+
+* [IEEE-754 Floating Point Converter](https://www.h-schmidt.net/FloatConverter/IEEE754.html)

@@ -52,4 +52,4 @@ System.out.println("使用valueOf构造 BigDecimal:"+bd.multiply(BigDecimal.valu
 所以切记切记，一定**不要用 double 或者 float  等小数类型直接去构造 BigDecimal 。需要转换成 字符串.** 
 
 
-[那么为什么二进制无法精确表示部分十进制小数呢？](notes/dev/computer-systems/Why-can't-decimals-be-represented-exactly.md)
+[那么为什么二进制无法精确表示部分十进制小数呢？](/notes/dev/computer-systems/Why-can't-decimals-be-represented-exactly.md)
