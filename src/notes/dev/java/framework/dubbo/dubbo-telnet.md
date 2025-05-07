@@ -7,6 +7,7 @@ tag:
     - Java 框架
     - 后端开发备忘录
     - Dubbo 
+star: true
 description: Dubbo Telnet 使用姿势记录。
 ---
 

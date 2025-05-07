@@ -7,6 +7,7 @@ tag:
     - Java
     - Spring
     - 后端开发备忘录
+star: true
 description: Spring Expression Language（简称SpEL）是一种功能强大的表达式语言
 ---
 # Spel 表达式
