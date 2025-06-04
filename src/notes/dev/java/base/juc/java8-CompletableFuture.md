@@ -183,7 +183,7 @@ System.out.println("----------combinedRes"+join);
 ## 最佳实践
 ### 合理选择线程池
 ::: info 注意
-所有带 `Async` 后缀的方法可指定异步执行的线程池
+所有带 `Async` 后缀的方法都可以指定线程池
 :::
 CompletableFuture 默认使用 ForkJoinPool 线程池，建议不同的任务使用不同的线程池。
 ```java title='设置线程池示例'
