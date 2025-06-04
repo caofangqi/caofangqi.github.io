@@ -8,6 +8,7 @@ tag:
     - JUC
     - 后端开发备忘录
 description: CompletableFuture 提供了一种强大且灵活的方式来编写异步、非阻塞的代码。在 Java 8 中被引入，由于其易用性和处理复杂异步工作流的能力而广受欢迎。
+star: true
 ---
 # CompletableFuture 使用指南
 ## 基本概念
@@ -181,7 +182,7 @@ System.out.println("----------combinedRes"+join);
 
 ## 最佳实践
 ### 合理选择线程池
-::: info
+::: info 注意
 所有带 `Async` 后缀的方法可指定异步执行的线程池
 :::
 CompletableFuture 默认使用 ForkJoinPool 线程池，建议不同的任务使用不同的线程池。
