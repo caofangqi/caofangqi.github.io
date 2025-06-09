@@ -3,6 +3,7 @@ title: 旧旋律里的十二年刻度
 date: 2025-05-30 18:06:18
 description: 写代码听歌时，听到熟悉的旋律，有感而发
 order: 1995
+article: false
 category:
     - 随笔
 tag: 
