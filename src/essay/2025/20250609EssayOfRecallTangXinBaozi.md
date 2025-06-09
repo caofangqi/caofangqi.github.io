@@ -4,6 +4,7 @@ date: 2025-05-30 18:06:18
 description: 深藏在记忆深处的画面
 order: 1995
 article: false
+isOriginal: true
 category:
     - 随笔
 tag: 

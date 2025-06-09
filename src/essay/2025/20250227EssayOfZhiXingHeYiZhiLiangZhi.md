@@ -3,6 +3,7 @@ title: 知行合一、致良知 我的理解
 date: 2025-02-27 18:26:59
 description: 理解知行合一，践行知行合一 
 order: 1996
+isOriginal: true
 category:
     - 随笔
 tag: 

@@ -3,6 +3,7 @@ title: AI 时代来临，科幻照进现实，浅度思考一下
 date: 2025-02-24 18:26:59
 description: 时代的一粒尘埃，落在个人身上就是一座大山，AI 时代，我该何去何从
 order: 1997
+isOriginal: true
 category:
     - 随笔
 tag: 
