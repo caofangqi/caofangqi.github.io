@@ -12,7 +12,7 @@ tag:
     - 反思
     - 心得
 ---
-最近读了人民日报的文章<<[人生回报率很高的一件事：培养输出型爱好](https://mp.weixin.qq.com/s/AB8YnGzEfEXBHVyjzI0ZLw)>> 深有感触 
+最近读了人民日报的文章[人生回报率很高的一件事：培养输出型爱好](https://mp.weixin.qq.com/s/AB8YnGzEfEXBHVyjzI0ZLw) 深有感触 
 
 你是否也曾有过这样的时刻：刷了一阵儿短视频，放下手机后，心里只剩下空落落的疲惫？
 
