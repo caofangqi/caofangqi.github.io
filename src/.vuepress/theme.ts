@@ -38,6 +38,8 @@ export default hopeTheme({
     intro: "/intro.html",
     timeline: "人生天地之间，若白驹过隙，忽然而已",
     medias: {
+      "GitHub":"https://github.com/caofangqi",
+      "XiaoHongShu":"https://www.xiaohongshu.com/user/profile/5fad0ce1000000000100a60c"
       // Baidu: "https://example.com",
       // BiliBili: "https://example.com",
       // Bitbucket: "https://example.com",
