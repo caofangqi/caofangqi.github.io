@@ -3,7 +3,7 @@ title: 二零二五年七月十七日傍晚随笔 AI 畅想
 date: 2025-07-17 23:43:59
 description: 说好的培养输出型爱好，说好的开始最重要，说到的要做到.
 order: 1991
-article: true
+article: false
 isOriginal: true
 category:
     - 随笔
