@@ -5,7 +5,7 @@ category:
     - 笔记
 tag: 
     - Python
-    - 后端开发备忘录
+    - 技术笔记
 description: Python 基础语法&类和实例&异常&函数等
 ---
 

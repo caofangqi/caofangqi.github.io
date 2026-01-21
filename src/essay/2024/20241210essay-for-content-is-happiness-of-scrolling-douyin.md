@@ -5,7 +5,7 @@ order: 998
 category:
     - 随笔
 tag: 
-    - 感悟
+    - 人生思考
     - 莫向外求
     - 2024随笔
 description: 关于知足常乐一点体会

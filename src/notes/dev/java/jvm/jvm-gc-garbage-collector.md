@@ -6,7 +6,7 @@ category:
 tag: 
     - Java
     - JVM
-    - 后端开发备忘录
+    - 技术笔记
 description: 记录一些Java 中经典垃圾回收器，以备查看。
 ---
 # Java 中经典垃圾回收器

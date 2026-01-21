@@ -5,7 +5,7 @@ order: 995
 category:
     - 随笔
 tag: 
-    - 感悟
+    - 人生思考
     - 沟通
     - 2024随笔
 description: 成长是一个不断自我发现的过程

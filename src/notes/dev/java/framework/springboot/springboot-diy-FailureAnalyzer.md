@@ -5,7 +5,7 @@ category:
     - 笔记
 tag: 
     - Java 框架
-    - 后端开发备忘录
+    - 技术笔记
     - Spring Boot
     - Java经验
 description: Spring Boot FailureAnalyzer 自定义、提升排查问题的效率

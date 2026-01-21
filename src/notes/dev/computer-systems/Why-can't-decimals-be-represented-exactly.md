@@ -5,7 +5,7 @@ category:
     - 笔记
 tag: 
     - Computer Systems
-    - 后端开发备忘录
+    - 技术笔记
 description: 十进制小数转换二进制精度丢失问题
 ---
 # 为什么有些十进制小数使用二进制无法精确表示

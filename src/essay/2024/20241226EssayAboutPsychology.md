@@ -5,7 +5,7 @@ order: 996
 category:
     - 随笔
 tag: 
-    - 感悟
+    - 人生思考
     - 2024随笔
 description: 我们要学会接受事与愿违
 ---

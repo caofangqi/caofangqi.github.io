@@ -6,7 +6,7 @@ category:
 tag: 
     - Java
     - 日志
-    - 后端开发备忘录
+    - 技术笔记
 description: 日志记录小技巧，MDC(Mapped Diagnostic Context) 
 star: true
 ---

@@ -6,7 +6,7 @@ category:
 tag: 
     - Java
     - Java 命令
-    - 后端开发备忘录
+    - 技术笔记
 star: true
 description: Jdk bin 目录下的故障处理命令工具、jinfo、jps、jstat、jstack 等
 ---

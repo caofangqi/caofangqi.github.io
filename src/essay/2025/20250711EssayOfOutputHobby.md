@@ -9,8 +9,7 @@ category:
     - 随笔
 tag: 
     - 2025随笔
-    - 反思
-    - 心得
+    - 人生思考
 ---
 最近读了人民日报的文章[人生回报率很高的一件事：培养输出型爱好](https://mp.weixin.qq.com/s/AB8YnGzEfEXBHVyjzI0ZLw) 深有感触 
 

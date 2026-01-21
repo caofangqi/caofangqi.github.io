@@ -6,7 +6,7 @@ category:
 tag: 
     - Java
     - lambda
-    - 后端开发备忘录
+    - 技术笔记
 star: true
 description: Stream 使用指南(基于 java 8），更简洁更高效处理集合数据
 ---

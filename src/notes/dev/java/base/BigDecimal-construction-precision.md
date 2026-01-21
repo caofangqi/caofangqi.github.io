@@ -6,7 +6,7 @@ category:
 tag: 
     - Java
     - 问题记录集
-    - 后端开发备忘录
+    - 技术笔记
 description: BigDecimal 使用不当会出精度问题哦
 ---
 # 使用 BigDecimal 计算出现精度问题

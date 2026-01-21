@@ -6,7 +6,7 @@ category:
 tag: 
     - Java
     - JUC
-    - 后端开发备忘录
+    - 技术笔记
 description: CompletableFuture 提供了一种强大且灵活的方式来编写异步、非阻塞的代码。在 Java 8 中被引入，由于其易用性和处理复杂异步工作流的能力而广受欢迎。
 star: true
 ---

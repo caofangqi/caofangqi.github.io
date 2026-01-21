@@ -5,7 +5,7 @@ category:
     - 笔记
 tag: 
     - Git
-    - 后端开发备忘录
+    - 技术笔记
 description: Git仓库特别大怎么办，试试 BFG 吧
 ---
 

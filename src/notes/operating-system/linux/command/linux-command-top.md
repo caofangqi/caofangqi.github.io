@@ -6,7 +6,7 @@ category:
 tag: 
     - Linux 
     - 命令
-    - 后端开发备忘录
+    - 技术笔记
 description: Top 命令使用详解
 ---
 # Top 命令
